@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: broken-manifest-wrong-apiversion
+spec:
+  containers:
+    - name: busybox
+      image: busybox

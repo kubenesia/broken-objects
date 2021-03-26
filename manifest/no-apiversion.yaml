@@ -1,0 +1,7 @@
+kind: Pod
+metadata:
+  name: broken-manifest-no-apiversion
+spec:
+  containers:
+    - name: busybox
+      image: busybox
