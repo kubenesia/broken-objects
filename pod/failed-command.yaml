@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: broken-pod-failed-command
+spec:
+  containers:
+    - name: busybox
+      image: busybox
+      command:
+        - /bin/sh
+        - -c
+        - exit 1
